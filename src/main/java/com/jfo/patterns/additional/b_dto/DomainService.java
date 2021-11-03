@@ -15,4 +15,10 @@ public class DomainService {
         domainObject.setConfidential("Confidential property");
         return domainObject;
     }
+
+    public static void main(String[] args) {
+        DomainService domainService = new DomainService();
+        DomainObjectDto dto = domainService.getData();
+        System.out.println(dto.getaProperty());
+    }
 }
